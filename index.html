@@ -65,6 +65,31 @@
             background-color: #b200ff;
             padding: 0;
         }
+
+        #menu {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #nav {
+            margin: auto 0;
+        }
+
+        #nav > ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul > li {
+            margin: 0 15px;
+        }
+
+        ul > li > a {
+            color: #070225
+        }
+
         .text-banner{
             color:#fff;
             text-align:center;
@@ -155,19 +180,17 @@
                 </div>
             </div>
             <div id="main-header">
-                <div class="row boxed">
-                    <div class="col-sm-12">
-                        <div id="logo">logo</div>
-                        <div id="badge">images</div>
-                        <div id="nav">
-                            <ul>
-                                <li class=""><a class="" href="#">Learning journeys</a></li>
-                                <li class=""><a class="" href="#">Course catalog</a></li>
-                                <li class=""><a class="" href="#">Certifications</a></li>
-                                <li class=""><a class="" href="#">Releases</a></li>
-                                <li class=""><a class="" href="#">Bizagi.com</a></li>
-                            </ul>
-                        </div>
+                <div class="boxed" id="menu">
+                    <div id="logo">logo</div>
+                    <div id="badge">images</div>
+                    <div id="nav">
+                        <ul>
+                            <li class=""><a class="" href="#">Learning journeys</a></li>
+                            <li class=""><a class="" href="#">Course catalog</a></li>
+                            <li class=""><a class="" href="#">Certifications</a></li>
+                            <li class=""><a class="" href="#">Releases</a></li>
+                            <li class=""><a class="" href="#">Bizagi.com</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
