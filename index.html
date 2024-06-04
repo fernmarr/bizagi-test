@@ -18,6 +18,7 @@
             //padding: 40px 0;
             //background-color: #cccccc;
         }
+
         .full {
             width: 100%;
             max-width: 100%;
@@ -27,6 +28,14 @@
             height: 40px;
             width: 100%;
             float: right;
+            background-color: #070225;
+            color: whitesmoke;
+            display: flex;
+            align-items: center;
+        }
+        #top-header > #content {
+            display: flex;
+            justify-content: center;
         }
         #main-header {
             height: 100px;
@@ -131,8 +140,8 @@
     <div id="page">
         <div id="header">
             <div id="top-header">
-                <div class="row boxed">
-                    <div class="col-sm-12">
+                <div class="boxed">
+                    <div id="content">
                         <div id="loggin">You are not logged in. <a href="#">( Log In )</a></div>
                         <div>|</div>
                         <div id="lang">English (en) <i class="fa fa-chevron-down" aria-hidden="true"></i></div>
