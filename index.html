@@ -3,9 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>bizagi</title>
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        .boxed {
+            width: 70%;
+            max-width: 1240px;
+            margin: auto;
+            //padding: 40px 0;
+            //background-color: #cccccc;
+        }
+        .full {
+            width: 100%;
+            max-width: 100%;
+            padding: 0;
+        }
+        #top-header {
+            height: 40px;
+            width: 100%;
+            float: right;
+        }
+        #main-header {
+            height: 100px;
+            width: 100%;
+        }
+        #botton-header {
+            height: 300px;
+            width: 100%;
+            background-color: #0094ffff;
+        }
+
+        #logo {
+            height: 80px;
+            width: 200px;
+            background-color: #ff6a00;
+            padding: 10px 0 10px 0;
+        }
+        #badge {
+            height: 100px;
+            width: 90px;
+            background-color: #b200ff;
+            padding: 0;
+        }
+        .text-banner{
+            color:#fff;
+            text-align:center;
+            vertical-align:middle;
+        }
+
+
+
+
+        /* basic css */
+        body {
+            font-family: Ubuntu;
+        }
+        a {
+            color: #a7e805;
+            text-decoration: none;
+        }
+
+
+
+        /* ubuntu css */
+        .ubuntu-light {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .ubuntu-regular {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .ubuntu-medium {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .ubuntu-bold {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .ubuntu-light-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .ubuntu-regular-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .ubuntu-medium-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .ubuntu-bold-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+
+
+    </style>
+
+
+
 </head>
 <body>
-    Hello World
+
+    <div id="page">
+        <div id="header">
+            <div id="top-header">
+                <div class="row boxed">
+                    <div class="col-sm-12">
+                        <div id="loggin">You are not logged in. <a href="#">( Log In )</a></div>
+                        <div>|</div>
+                        <div id="lang">English (en) <i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div id="main-header">
+                <div class="row boxed">
+                    <div class="col-sm-12">
+                        <div id="logo">logo</div>
+                        <div id="badge">image</div>
+                        <div id="nav">
+                            <ul>
+                                <li class=""><a class="" href="#">Learning journeys</a></li>
+                                <li class=""><a class="" href="#">Course catalog</a></li>
+                                <li class=""><a class="" href="#">Certifications</a></li>
+                                <li class=""><a class="" href="#">Releases</a></li>
+                                <li class=""><a class="" href="#">Bizagi.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="botton-header">
+                <div class="row full">
+                    <div class="col-sm-12">
+                        <div id="banner"><h1 class="text-banner">What's new in Bizagi v10.7?</h1></div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="container">
+                <div id="call-text">
+                    <h2>New features</h2>
+                    <p>Learn how Bizagi v10.7 can benefit your business, and get started today with our videos and self-help.</p>
+
+                </div>
+                <div id="box">
+                    <div class="box-text">
+                        <h2>Email integration</h2>
+                        <div class="left-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu nisl, condimentum quis auctor id, faucibus id ligula. Pellentesque dolor nisi, tristique non odio vel, molestie fermentum neque. Nulla gravida nisl non sem molestie interdum. Etiam sodales quis tortor aliquet semper. Integer porttitor diam nec pretium vestibulum. Donec accumsan massa ac enim sollicitudin, at suscipit est rhoncus.
+                        </div>
+                    </div>
+                    <div class="box-img">
+                        <div class="img">
+                            aaaaaaaaaaaaaa
+                        </div>
+                    </div>
+                </div>
+                <div id="box">
+                    <div class="box-img">
+                        <div class="img">
+                            aaaaaaaaaaaaaa
+                        </div>
+                    </div>
+                    <div class="box-text">
+                        <h2>Email integration</h2>
+                        <div class="left-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu nisl, condimentum quis auctor id, faucibus id ligula. Pellentesque dolor nisi, tristique non odio vel, molestie fermentum neque. Nulla gravida nisl non sem molestie interdum. Etiam sodales quis tortor aliquet semper. Integer porttitor diam nec pretium vestibulum. Donec accumsan massa ac enim sollicitudin, at suscipit est rhoncus.
+                        </div>
+                    </div>
+                </div>
+                <div id="box">
+                    <div class="box-text">
+                        <h2>Email integration</h2>
+                        <div class="left-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu nisl, condimentum quis auctor id, faucibus id ligula. Pellentesque dolor nisi, tristique non odio vel, molestie fermentum neque. Nulla gravida nisl non sem molestie interdum. Etiam sodales quis tortor aliquet semper. Integer porttitor diam nec pretium vestibulum. Donec accumsan massa ac enim sollicitudin, at suscipit est rhoncus.
+                        </div>
+                    </div>
+                    <div class="box-img">
+                        <div class="img">
+                            aaaaaaaaaaaaaa
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div id="top-footer">
+                    text text
+                </div>
+                <div id="main footer">
+                    <div id="footer-nav">
+                        <ul>
+                            <li>Bizagi Modeler</li>
+                            <li>Bizagi Studio</li>
+                            <li>Bizagi Engine</li>
+                            <li>Course Calendar</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                    <div id="footer-media">
+                        <p>Stay connected</p>
+                        <div class="social-icons">
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-copy">
+                    <a href="#">Copyright @ 2024 - Bizagi</a>|<a href="#">Term of use</a>1<a href="#">Privacy Policy</a>
+                </div>
+            </div>
+         </div>
+    </div>
 </body>
 </html>
