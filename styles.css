@@ -1,0 +1,421 @@
+
+/* Author: Fernando M
+    Date: 04/06/2024
+    Version: 1.0
+*/
+
+/* basic css */
+
+body {
+    font-family: Ubuntu;
+    margin: 0;
+}
+
+
+/* content css */
+
+
+.boxed {
+    width: 70%;
+    max-width: 1240px;
+    margin: auto;
+}
+
+.full {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+#top-header {
+    height: 40px;
+    width: 100%;
+    float: right;
+    background-color: #070225;
+    color: #808080;
+    align-items: center;
+    font-size: 12px;
+}
+
+#top-content {
+    justify-content: end;
+}
+
+#loggin > a {
+    color: #a7e805;
+    text-decoration: none;
+}
+
+    #loggin > a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+
+.top-content-pipe {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#main-header {
+    height: 100px;
+    width: 100%;
+}
+
+#logo {
+    height: 80px;
+    width: 200px;
+    background-color: #ff6a00;
+    padding: 10px 0 10px 0;
+}
+
+#badge {
+    height: 110px;
+    width: 80px;
+    background-color: #b200ff;
+    padding: 0;
+    margin-top: -10px;
+}
+
+#menu {
+    justify-content: space-between;
+}
+
+#nav {
+    margin: auto 0;
+}
+
+    #nav > ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+ul > li {
+    margin: 0 15px;
+}
+
+    ul > li > a {
+        color: #808080;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+        ul > li > a:hover {
+            color: #a7e805;
+        }
+
+#botton-header {
+    height: 250px;
+    width: 100%;
+    background-color: #0094ffff;
+    align-items: center;
+    justify-content: center;
+}
+
+    #botton-header > h1 {
+        color: #fff;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+#call {
+    height: 150px;
+    border-bottom: 2px solid #a7e80560;
+    align-items: center;
+    justify-content: left;
+    line-height: 5px;
+    padding-left: 50px;
+}
+
+#call-text > h2 {
+    color: #ff6a00;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#call-text > p {
+    color: #808080;
+}
+
+.box {
+    border-bottom: 2px solid #a7e80560;
+    height: 240px;
+    padding: 0 100px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+    .box::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 10px;
+        height: 10px;
+        background-color: #a7e805;
+        transform: translateX(-50%) translateY(50%) rotate(45deg);
+        z-index: 1;
+        left: 50%;
+    }
+
+#container > .box:nth-child(even) {
+    background-color: #f7faf1;
+}
+
+.bullet {
+    vertical-align: middle;
+}
+
+.box-gap {
+    gap: 50px;
+}
+
+#box-text {
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-text > p {
+    color: #808080;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.left-text > h3 {
+    color: #0094ffff;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.left-text > p > a {
+    color: #0094ffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+    .left-text > p > a:hover {
+        color: #a7e805;
+    }
+
+
+#box-img {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+#img {
+    height: 150px;
+    width: 100%;
+    background-color: #a7e805;
+    border: 2px solid #0094ffff;
+}
+
+#top-footer {
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 3px solid #19275cff;
+}
+
+    #top-footer > p {
+        font-size: 13px;
+        color: #1b1b1b;
+        margin: 2.5px 0;
+    }
+
+        #top-footer > p > a {
+            color: #0094ffff;
+            text-decoration: none;
+        }
+
+            #top-footer > p > a:hover {
+                color: #a7e805;
+            }
+
+#main-footer {
+    background-color: #808080;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 3px solid #9d9d9dff;
+    padding: 0 60px;
+}
+
+#main-footer-content {
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fa-2xs {
+    font-size: 0.3rem;
+}
+
+#footer-nav {
+    margin: auto 0;
+    flex: 2;
+}
+
+    #footer-nav > ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        #footer-nav > ul > li {
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+            #footer-nav > ul > li::after {
+                content: "|";
+                color: white;
+                padding: 0 5px;
+            }
+
+            #footer-nav > ul > li:last-child::after {
+                content: "";
+            }
+
+            #footer-nav > ul > li > a {
+                color: #fff;
+                font-size: 12px;
+                font-weight: 300;
+                text-decoration: none;
+            }
+
+                #footer-nav > ul > li > a:hover {
+                    color: #a7e805;
+                }
+
+
+#footer-media {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+    #footer-media > p {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    #footer-media > .social-icons {
+        color: #fff;
+        padding: 0 20px;
+        font-size: 20px;
+    }
+
+#footer-copy {
+    background-color: #0b4543;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+#footer-copy-content {
+    justify-content: center;
+    align-items: center;
+}
+
+    #footer-copy-content > ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #footer-copy-content ul > li > p {
+        font-size: 10px;
+        color: #a7e805;
+    }
+
+    #footer-copy-content > ul > li {
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+        #footer-copy-content > ul > li::after {
+            content: "|";
+            color: white;
+            padding: 0 5px;
+        }
+
+        #footer-copy-content > ul > li:last-child::after {
+            content: "";
+        }
+
+        #footer-copy-content > ul > li > a {
+            color: #fff;
+            font-size: 12px;
+            font-weight: 300;
+            text-decoration: none;
+        }
+
+            #footer-copy-content > ul > li > a:hover {
+                color: #a7e805;
+            }
+
+
+/* ubuntu css */
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}

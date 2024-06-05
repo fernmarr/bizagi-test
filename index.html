@@ -3,270 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bizagi</title>
-
+    <title>bizagi-test</title>
+    <meta name="author" content="Fernando J. Martínez" />
+    <meta name="description" content="Bisagi HTML5 - CSS Test" />
     <script src="https://kit.fontawesome.com/bf36120d14.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
-    <style>
-        .boxed {
-            width: 70%;
-            max-width: 1240px;
-            margin: auto;
-        }
-
-        .full {
-            width: 100%;
-            max-width: 100%;
-            padding: 0;
-        }
-        .d-flex{
-            display:flex;
-        }
-
-
-        #top-header {
-            height: 40px;
-            width: 100%;
-            float: right;
-            background-color: #070225;
-            color: #808080;
-            align-items: center;
-            font-size:12px;
-        }
-        #top-content {
-            justify-content: end;
-        }
-            #loggin > a {
-                color: #a7e805;
-                text-decoration: none;
-            }
-                #loggin > a:hover {
-                    color: #fff;
-                    text-decoration: none;
-                }
-
-        .top-content-pipe {
-            margin-left: 5px;
-            margin-right: 5px;
-        }
-
-        #main-header {
-            height: 100px;
-            width: 100%;
-        }
-        #logo {
-            height: 80px;
-            width: 200px;
-            background-color: #ff6a00;
-            padding: 10px 0 10px 0;
-        }
-        #badge {
-            height: 110px;
-            width: 80px;
-            background-color: #b200ff;
-            padding: 0;
-            margin-top: -10px;
-        }
-        #menu {
-            justify-content: space-between;
-        }
-        #nav {
-            margin: auto 0;
-        }
-            #nav > ul {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-            }
-                ul > li {
-                    margin: 0 15px;
-                }
-                    ul > li > a {
-                        color: #808080;
-                        font-size: 15px;
-                        font-weight: 500;
-                        text-decoration: none;
-                    }
-                        ul > li > a:hover {
-                            color: #a7e805;
-                        }
-
-        #botton-header {
-            height: 250px;
-            width: 100%;
-            background-color: #0094ffff;
-            align-items: center;
-            justify-content: center;
-        }
-        #botton-header > h1 {
-            color: #fff;
-            font-size:40px;
-            font-weight:bolder;
-        }
-
-        #call {
-            height: 150px;
-            border-bottom: 2px solid #a7e80560;
-            align-items: center;
-            justify-content: left;
-            line-height: 5px;
-            padding-left: 50px;
-        }
-            #call-text > h2 {
-                color: #ff6a00;
-                font-size: 30px;
-                font-weight: 500;
-            }
-            #call-text > p {
-                color: #808080;
-            }
-
-        .box {
-            border-bottom: 2px solid #a7e80560;
-            height: 240px;
-            padding: 0 100px;
-            align-items: center;
-            justify-content:space-between;
-        }
-
-        .box::after {
-            content: "";
-            position: absolute;
-            bottom:0;
-            width: 10px;
-            height: 10px;
-            background-color: #a7e80560;
-            transform: translateX(-50%) translateY(50%) rotate(45deg);
-        }
-            #container > .box:nth-child(even) {
-                background-color: #f7faf1;
-            }
-
-        #box-text {
-            flex: 2;
-            align-items: center;
-            justify-content: center;
-        }
-            .left-text > p {
-                color: #808080;
-                font-size: 14px;
-                text-align:justify;
-            }
-            .left-text > h3 {
-                color: #0094ffff;
-                font-weight:500;
-                font-size: 18px;
-            }
-            .left-text > p > a {
-                color: #0094ffff;
-                text-decoration:none;
-                font-weight: 500;
-            }
-            .left-text > p > a:hover {
-                color: #a7e805;
-            }
-
-
-        #box-img {
-            flex: 1;
-            align-items: center;
-            justify-content: center;
-        }
-            #img {
-                height: 150px;
-                width:200px;
-                background-color: #a7e805;
-                border: 2px solid #0094ffff;
-            }
-
-        #top-footer {
-            height:150px;
-            align-items: center;
-            justify-content: center;
-        }
-            #top-footer > p {
-                font-size:13px;
-                color:#1b1b1b
-            }
-            #top-footer > p > a {
-                color:#0094ffff;
-                text-decoration:none;
-            }
-            #top-footer > p > a:hover {
-                color: #a7e805;
-            }
-
-
-        /* basic css */
-        body {
-            font-family: Ubuntu;
-            margin: 0;
-        }
-        
-
-
-
-        /* ubuntu css */
-        .ubuntu-light {
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 300;
-            font-style: normal;
-        }
-
-        .ubuntu-regular {
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        .ubuntu-medium {
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 500;
-            font-style: normal;
-        }
-
-        .ubuntu-bold {
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 700;
-            font-style: normal;
-        }
-
-        .ubuntu-light-italic {
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 300;
-            font-style: italic;
-        }
-
-        .ubuntu-regular-italic {
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 400;
-            font-style: italic;
-        }
-
-        .ubuntu-medium-italic {
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 500;
-            font-style: italic;
-        }
-
-        .ubuntu-bold-italic {
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 700;
-            font-style: italic;
-        }
-
-
-
-    </style>
-
-
-
+    <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
-
     <div id="page">
         <div id="header">
             <div id="top-header" class="d-flex">
@@ -286,11 +32,11 @@
                     </div>
                     <div id="nav">
                         <ul class="d-flex">
-                            <li class=""><a class="" href="#">Learning journeys</a></li>
-                            <li class=""><a class="" href="#">Course catalog</a></li>
-                            <li class=""><a class="" href="#">Certifications</a></li>
-                            <li class=""><a class="" href="#">Releases</a></li>
-                            <li class=""><a class="" href="#">Bizagi.com</a></li>
+                            <li><a href="#">Learning journeys</a></li>
+                            <li><a href="#">Course catalog</a></li>
+                            <li><a href="#">Certifications</a></li>
+                            <li><a href="#">Releases</a></li>
+                            <li><a href="#">Bizagi.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -308,7 +54,7 @@
                     </div>
                 </div>
                 <div class="box d-flex">
-                    <div id="box-content" class="boxed d-flex">
+                    <div id="box-content" class="boxed d-flex box-gap">
                         <div id="box-img" class="d-flex"><div id="img"></div></div>
                         <div id="box-text" class="d-flex">
                             <div class="left-text">
@@ -320,7 +66,7 @@
                     </div>
                 </div>
                 <div class="box d-flex">
-                    <div id="box-content" class="boxed d-flex">
+                    <div id="box-content" class="boxed d-flex box-gap">
                         <div id="box-text" class="d-flex">
                             <div class="left-text">
                                 <h3>Automatic testing</h3>
@@ -332,7 +78,7 @@
                     </div>
                 </div>
                 <div class="box d-flex">
-                    <div id="box-content" class="boxed d-flex">
+                    <div id="box-content" class="boxed d-flex box-gap">
                         <div id="box-img" class="d-flex"><div id="img"></div></div>
                         <div id="box-text" class="d-flex">
                             <div class="left-text">
@@ -344,34 +90,49 @@
                     </div>
                 </div>
             </div>
-            <div id="footer" class="d-flex full">
-                <div id="top-footer" class="boxed d-flex">
+            <div id="footer" class="full">
+                <div id="top-footer" class="d-flex">
                     <p>Interesed in discovering more new features?</p>
                     <p>Read our Release notes:</p>
-                    <p><a href="#">Bizagi Studio</a> . <a href="#">Bizagi Engine .Net</a> . <a href="#">Bizagi Engine Java</a></p>
+                    <p>
+                        <a href="#">Bizagi Studio</a>
+                        <i class="bullet fa-solid fa-circle fa-2xs"></i>
+                        <a href="#">Bizagi Engine .Net</a>
+                        <i class="bullet fa-solid fa-circle fa-2xs"></i>
+                        <a href="#">Bizagi Engine Java</a>
+                    </p>
                 </div>
-                <div id="main footer" class="boxed d-flex">
-                    <div id="footer-nav">
-                        <ul>
-                            <li>Bizagi Modeler</li>
-                            <li>Bizagi Studio</li>
-                            <li>Bizagi Engine</li>
-                            <li>Course Calendar</li>
-                            <li>Contact Us</li>
-                        </ul>
-                    </div>
-                    <div id="footer-media">
-                        <p>Stay connected</p>
-                        <div class="social-icons">
-                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                <div id="main-footer" class="d-flex">
+                    <div id="main-footer-content" class="boxed d-flex">
+                        <div id="footer-nav">
+                            <ul class="d-flex">
+                                <li><a href="#">Bizagi Modeler</a></li>                               
+                                <li><a href="#">Bizagi Studio</a></li>                                
+                                <li><a href="#">Bizagi Engine</a></li>                                
+                                <li><a href="#">Course Calendar</a></li>                               
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div id="footer-media" class="d-flex">
+                            <p>Stay connected</p>
+                            <div class="social-icons">
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div id="footer-copy" class="boxed d-flex">
-                    <a href="#">Copyright @ 2024 - Bizagi</a>|<a href="#">Term of use</a>1<a href="#">Privacy Policy</a>
+                <div id="footer-copy" class="full d-flex">
+                    <div id="footer-copy-content">
+                        <ul class="d-flex">
+                            <li><p>Copyright @ 2024 - Bizagi</p></li>
+                            <li><a href="#">Term of use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
          </div>
