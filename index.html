@@ -131,6 +131,16 @@
             align-items: center;
             justify-content:space-between;
         }
+
+        .box::after {
+            content: "";
+            position: absolute;
+            bottom:0;
+            width: 10px;
+            height: 10px;
+            background-color: #a7e80560;
+            transform: translateX(-50%) translateY(50%) rotate(45deg);
+        }
             #container > .box:nth-child(even) {
                 background-color: #f7faf1;
             }
