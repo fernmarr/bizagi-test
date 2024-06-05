@@ -15,8 +15,6 @@
             width: 70%;
             max-width: 1240px;
             margin: auto;
-            //padding: 40px 0;
-            //background-color: #cccccc;
         }
 
         .full {
@@ -24,19 +22,31 @@
             max-width: 100%;
             padding: 0;
         }
+        .d-flex{
+            display:flex;
+        }
+
+
         #top-header {
             height: 40px;
             width: 100%;
             float: right;
             background-color: #070225;
-            color: whitesmoke;
-            display: flex;
+            color: #808080;
             align-items: center;
+            font-size:12px;
         }
         #top-content {
-            display: flex;
             justify-content: end;
         }
+            #loggin > a {
+                color: #a7e805;
+                text-decoration: none;
+            }
+                #loggin > a:hover {
+                    color: #fff;
+                    text-decoration: none;
+                }
 
         .top-content-pipe {
             margin-left: 5px;
@@ -47,12 +57,6 @@
             height: 100px;
             width: 100%;
         }
-        #botton-header {
-            height: 300px;
-            width: 100%;
-            background-color: #0094ffff;
-        }
-
         #logo {
             height: 80px;
             width: 200px;
@@ -60,53 +64,138 @@
             padding: 10px 0 10px 0;
         }
         #badge {
-            height: 100px;
-            width: 90px;
+            height: 110px;
+            width: 80px;
             background-color: #b200ff;
             padding: 0;
+            margin-top: -10px;
         }
-
         #menu {
-            display: flex;
             justify-content: space-between;
         }
-
         #nav {
             margin: auto 0;
         }
+            #nav > ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+                ul > li {
+                    margin: 0 15px;
+                }
+                    ul > li > a {
+                        color: #808080;
+                        font-size: 15px;
+                        font-weight: 500;
+                        text-decoration: none;
+                    }
+                        ul > li > a:hover {
+                            color: #a7e805;
+                        }
 
-        #nav > ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
+        #botton-header {
+            height: 250px;
+            width: 100%;
+            background-color: #0094ffff;
+            align-items: center;
+            justify-content: center;
+        }
+        #botton-header > h1 {
+            color: #fff;
+            font-size:40px;
+            font-weight:bolder;
         }
 
-        ul > li {
-            margin: 0 15px;
+        #call {
+            height: 150px;
+            border-bottom: 2px solid #a7e80560;
+            align-items: center;
+            justify-content: left;
+            line-height: 5px;
+            padding-left: 50px;
         }
+            #call-text > h2 {
+                color: #ff6a00;
+                font-size: 30px;
+                font-weight: 500;
+            }
+            #call-text > p {
+                color: #808080;
+            }
 
-        ul > li > a {
-            color: #070225
+        .box {
+            border-bottom: 2px solid #a7e80560;
+            height: 240px;
+            padding: 0 100px;
+            align-items: center;
+            justify-content:space-between;
         }
+            #container > .box:nth-child(even) {
+                background-color: #f7faf1;
+            }
 
-        .text-banner{
-            color:#fff;
-            text-align:center;
-            vertical-align:middle;
+        #box-text {
+            flex: 2;
+            align-items: center;
+            justify-content: center;
         }
+            .left-text > p {
+                color: #808080;
+                font-size: 14px;
+                text-align:justify;
+            }
+            .left-text > h3 {
+                color: #0094ffff;
+                font-weight:500;
+                font-size: 18px;
+            }
+            .left-text > p > a {
+                color: #0094ffff;
+                text-decoration:none;
+                font-weight: 500;
+            }
+            .left-text > p > a:hover {
+                color: #a7e805;
+            }
 
 
+        #box-img {
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+        }
+            #img {
+                height: 150px;
+                width:200px;
+                background-color: #a7e805;
+                border: 2px solid #0094ffff;
+            }
+
+        #top-footer {
+            height:150px;
+            align-items: center;
+            justify-content: center;
+        }
+            #top-footer > p {
+                font-size:13px;
+                color:#1b1b1b
+            }
+            #top-footer > p > a {
+                color:#0094ffff;
+                text-decoration:none;
+            }
+            #top-footer > p > a:hover {
+                color: #a7e805;
+            }
 
 
         /* basic css */
         body {
             font-family: Ubuntu;
+            margin: 0;
         }
-        a {
-            color: #a7e805;
-            text-decoration: none;
-        }
+        
 
 
 
@@ -170,21 +259,23 @@
 
     <div id="page">
         <div id="header">
-            <div id="top-header">
+            <div id="top-header" class="d-flex">
                 <div class="boxed">
-                    <div id="top-content">
+                    <div id="top-content" class="d-flex">
                         <div id="loggin">You are not logged in. <a href="#">( Log In )</a></div>
                         <div class="top-content-pipe">|</div>
                         <div id="lang">English (en) <i class="fa-solid fa-caret-down"></i></div>
                     </div>
                 </div>
             </div>
-            <div id="main-header">
-                <div class="boxed" id="menu">
-                    <div id="logo">logo</div>
-                    <div id="badge">images</div>
+            <div id="main-header" class="d-flex">
+                <div class="boxed d-flex" id="menu">
+                    <div class="d-flex">
+                        <div id="logo"></div>
+                        <div id="badge"></div>
+                    </div>
                     <div id="nav">
-                        <ul>
+                        <ul class="d-flex">
                             <li class=""><a class="" href="#">Learning journeys</a></li>
                             <li class=""><a class="" href="#">Course catalog</a></li>
                             <li class=""><a class="" href="#">Certifications</a></li>
@@ -194,68 +285,62 @@
                     </div>
                 </div>
             </div>
-            <div id="botton-header">
-                <div class="row full">
-                    <div class="col-sm-12">
-                        <div id="banner"><h1 class="text-banner">What's new in Bizagi v10.7?</h1></div>                    
-                    </div>
-                </div>
+            <div id="botton-header" class="d-flex">
+               <h1>What's new in Bizagi v10.7?</h1>                  
             </div>
         </div>
         <div id="main">
-            <div id="container" class="boxed">
-                <div id="call-text">
-                    <h2>New features</h2>
-                    <p>Learn how Bizagi v10.7 can benefit your business, and get started today with our videos and self-help.</p>
-
-                </div>
-                <div id="box">
-                    <div class="box-text">
-                        <h2>Email integration</h2>
-                        <div class="left-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu nisl, condimentum quis auctor id, faucibus id ligula. Pellentesque dolor nisi, tristique non odio vel, molestie fermentum neque. Nulla gravida nisl non sem molestie interdum. Etiam sodales quis tortor aliquet semper. Integer porttitor diam nec pretium vestibulum. Donec accumsan massa ac enim sollicitudin, at suscipit est rhoncus.
-                        </div>
-                    </div>
-                    <div class="box-img">
-                        <div class="img">
-                            image here
-                        </div>
+            <div id="container" class="full">
+                <div id="call" class="d-flex">
+                    <div id="call-text" class="boxed">
+                        <h2>New features</h2>
+                        <p>Learn how Bizagi v10.7 can benefit your business, and get started today with our videos and self-help.</p>
                     </div>
                 </div>
-                <div id="box">
-                    <div class="box-img">
-                        <div class="img">
-                            image here
-                        </div>
-                    </div>
-                    <div class="box-text">
-                        <h2>Automatic testing</h2>
-                        <div class="left-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu nisl, condimentum quis auctor id, faucibus id ligula. Pellentesque dolor nisi, tristique non odio vel, molestie fermentum neque. Nulla gravida nisl non sem molestie interdum. Etiam sodales quis tortor aliquet semper. Integer porttitor diam nec pretium vestibulum. Donec accumsan massa ac enim sollicitudin, at suscipit est rhoncus.
+                <div class="box d-flex">
+                    <div id="box-content" class="boxed d-flex">
+                        <div id="box-img" class="d-flex"><div id="img"></div></div>
+                        <div id="box-text" class="d-flex">
+                            <div class="left-text">
+                                <h3>Email integration</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu nisl, condimentum quis auctor id, faucibus id ligula. Pellentesque dolor nisi, tristique non odio vel, molestie fermentum neque. Nulla gravida nisl non sem molestie interdum. Etiam sodales quis tortor aliquet semper. Integer porttitor diam nec pretium vestibulum. Donec accumsan massa ac enim sollicitudin, at suscipit est rhoncus.</p>
+                                <p>For further information, click <a href="#">here.</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div id="box">
-                    <div class="box-text">
-                        <h2>Search List control</h2>
-                        <div class="left-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu nisl, condimentum quis auctor id, faucibus id ligula. Pellentesque dolor nisi, tristique non odio vel, molestie fermentum neque. Nulla gravida nisl non sem molestie interdum. Etiam sodales quis tortor aliquet semper. Integer porttitor diam nec pretium vestibulum. Donec accumsan massa ac enim sollicitudin, at suscipit est rhoncus.
+                <div class="box d-flex">
+                    <div id="box-content" class="boxed d-flex">
+                        <div id="box-text" class="d-flex">
+                            <div class="left-text">
+                                <h3>Automatic testing</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu nisl, condimentum quis auctor id, faucibus id ligula. Pellentesque dolor nisi, tristique non odio vel, molestie fermentum neque. Nulla gravida nisl non sem molestie interdum. Etiam sodales quis tortor aliquet semper. Integer porttitor diam nec pretium vestibulum. Donec accumsan massa ac enim sollicitudin, at suscipit est rhoncus.</p>
+                                <p>For further information, click <a href="#">here.</a></p>
+                            </div>
                         </div>
+                        <div id="box-img" class="d-flex"><div id="img"></div></div>
                     </div>
-                    <div class="box-img">
-                        <div class="img">
-                            image here
+                </div>
+                <div class="box d-flex">
+                    <div id="box-content" class="boxed d-flex">
+                        <div id="box-img" class="d-flex"><div id="img"></div></div>
+                        <div id="box-text" class="d-flex">
+                            <div class="left-text">
+                                <h3>Search List control</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu nisl, condimentum quis auctor id, faucibus id ligula. Pellentesque dolor nisi, tristique non odio vel, molestie fermentum neque. Nulla gravida nisl non sem molestie interdum. Etiam sodales quis tortor aliquet semper. Integer porttitor diam nec pretium vestibulum. Donec accumsan massa ac enim sollicitudin, at suscipit est rhoncus.</p>
+                                <p>For further information, click <a href="#">here.</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="footer" class="boxed">
-                <div id="top-footer">
+            <div id="footer" class="d-flex full">
+                <div id="top-footer" class="boxed d-flex">
                     <p>Interesed in discovering more new features?</p>
                     <p>Read our Release notes:</p>
                     <p><a href="#">Bizagi Studio</a> . <a href="#">Bizagi Engine .Net</a> . <a href="#">Bizagi Engine Java</a></p>
                 </div>
-                <div id="main footer">
+                <div id="main footer" class="boxed d-flex">
                     <div id="footer-nav">
                         <ul>
                             <li>Bizagi Modeler</li>
@@ -275,7 +360,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="footer-copy">
+                <div id="footer-copy" class="boxed d-flex">
                     <a href="#">Copyright @ 2024 - Bizagi</a>|<a href="#">Term of use</a>1<a href="#">Privacy Policy</a>
                 </div>
             </div>
